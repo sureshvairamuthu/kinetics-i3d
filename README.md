@@ -22,25 +22,30 @@ Then, clone this repository using
 `evaluate_sample.py`
 
 File reads numpy file for sample video stored under data folder
-To run the example codef from deepmind 
+
+To run the example code from deepmind 
 
 `$ python evaluate_sample.py`
 
 `i3d_load2videos.py` File allows to pass two types of files for two models for classifying.
 
 RGB video for rgb model optical flow video for flow model
+
 To run the file
+
 `$ python i3d_load2videos.py --eval_type =joint --rgbvideo = [filename] --flowvideo= [filename]`
 
 `i3d_flowconversion.py` File allows to pass one RGB video and converts it to opticalflow video if you choose joint or flow model for classification.
 
 To run the file
+
 `$ python i3d_flowconversion.py --eval_type =joint --rgbvideo = [filename]`
 
 
 `opticalflow.py` File with optical flow conversion code. The path to the video file to be converted is added inside the code and not passed as an argument.
 
 To run the file
+
 `$ python opticalflow.py `
 
 
